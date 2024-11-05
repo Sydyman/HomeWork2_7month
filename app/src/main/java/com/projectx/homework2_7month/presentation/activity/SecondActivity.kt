@@ -25,12 +25,12 @@ class SecondActivity : AppCompatActivity() {
         myAdapter = TaskAdapter(emptyList())
         binding.rvTask.adapter = myAdapter
 
-        // Подписываемся на изменения LiveData
+        
         viewModel.tasks.observe(this, Observer { tasks ->
             myAdapter.updateTasks(tasks)
         })
 
-        // Загружаем задачи
+        
         viewModel.loadTasks()
     }
 }
