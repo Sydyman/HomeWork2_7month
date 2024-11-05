@@ -62,6 +62,7 @@ dependencies {
 
     implementation("io.insert-koin:koin-android:3.5.0")
     implementation(libs.insert.koin.koin.android)
+    // фул проект
 
 
 }
